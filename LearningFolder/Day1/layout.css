@@ -1,0 +1,37 @@
+body {
+    background-color: wheat;
+}
+
+header {
+    background-color: aqua;
+    border: 1px solid black;
+    text-align: center;
+}
+
+main {
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    display: flex;
+    height: max-content;
+}
+
+article {
+    border: 1px solid black;
+    width: 30%;
+}
+
+section {
+    border: 1px solid black;
+    width: 50%;
+}
+
+aside {
+    border: 1px solid black;
+    width: 20%;
+}
+
+footer {
+    border: 1px solid black;
+    padding: 50px 0px 0px 0px;
+    margin: 100px 0px 0px 0px;
+}
