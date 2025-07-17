@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(154, 223, 223);
+    box-sizing: border-box;
+}
+
+.form-container{
+    background-color: rgb(33, 207, 149);
+    display: block;
+    position: relative;
+    border: 2px solid black;
+    margin: 150px auto;
+    padding: 40px;
+    width: 180px;
+    height: 280px;
+    font-family: sans-serif;
+}
+
+label{
+    align-items: center;
+}
+
+button{
+    background-color: darkslategray;
+    border: 1px solid black;
+    cursor: pointer;
+    color: white;
+}

@@ -1,0 +1,123 @@
+/* Navigation Question CSS */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: #afbacf;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0px 1px;
+    flex-wrap: wrap;
+}
+
+.nav-links li {
+    margin: 0px 15px;
+}
+
+.nav-links a {
+    color: rgba(17, 8, 8, 0.877);
+    text-decoration: none;
+    padding:  8px 12px;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    color: rgba(255, 255, 255, 0.877);
+    text-decoration: underline;
+}
+
+.nav-links .onact {
+    color: rgba(31, 10, 151, 0.877);
+}
+
+.nav-links{
+    @media (max-width: 600px){
+        .nav-links {
+            flex-direction: column;
+            align-items: center;
+            color: rgb(83, 215, 233);
+        }
+
+        .nav-links li{
+            margin: 10px 0px;
+        }
+    }
+}
+
+/* Button Question CSS*/
+
+.buttons-set {
+    box-sizing: border-box;
+    display: block;
+    color: black;
+    margin: 10px 50px;
+}
+
+.btn1 {
+    background-color: rgba(211, 141, 193, 0.884);
+    cursor: pointer;
+    color: white;      
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 2px 5px;
+    font-size: 1.1rem;
+}
+
+.btn1 a{
+    text-decoration: none;
+}
+
+.btn1 a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.btn2 {
+    background-color: rgb(149, 230, 156);
+    cursor: pointer;
+    color: white;      
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 2px 5px;
+    font-size: 1.1rem;
+}
+
+.btn2 a{
+    text-decoration: none;
+}
+
+.btn2 a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.btn3 {
+    background-color: rgb(97, 194, 154);
+    cursor: pointer;
+    color: white;      
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 2px 5px;
+    font-size: 1.1rem;
+}
+
+.btn3 a{
+    text-decoration: none;
+}
+
+.btn3 a:hover{
+    color: rgb(255, 255, 255);
+}
+
