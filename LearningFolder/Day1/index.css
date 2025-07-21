@@ -43,7 +43,6 @@ nav {
 .nav-links .onact {
     color: rgba(31, 10, 151, 0.877);
 }
-
 .nav-links{
     @media (max-width: 600px){
         .nav-links {

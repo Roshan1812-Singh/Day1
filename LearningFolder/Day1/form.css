@@ -7,9 +7,9 @@ body{
     background-color: rgb(33, 207, 149);
     display: block;
     position: relative;
-    border: 2px solid black;
-    margin: 150px auto;
-    padding: 40px;
+    border: 10px solid black;
+    margin:  auto;
+    padding: 20px;
     width: 180px;
     height: 280px;
     font-family: sans-serif;
@@ -24,4 +24,10 @@ button{
     border: 1px solid black;
     cursor: pointer;
     color: white;
+}
+
+.content{
+    display: block;
+    position: relative;
+    margin: 0px 100px;
 }

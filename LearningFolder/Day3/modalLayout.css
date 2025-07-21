@@ -1,0 +1,74 @@
+body{
+    background-image: linear-gradient(100deg, rgb(250, 150, 96), rgb(255, 128, 1), rgb(230, 155, 81));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.open-modal{
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: larger;
+}
+
+.open-modal img{
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.Para {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: white;
+    margin-top: 0;
+    border-radius: 5px;
+}
+
+.modal-box {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-box:target{
+    display: block;
+}
+
+.modal-content {
+    color: white;
+    position: fixed;
+    background-image: linear-gradient(100deg, rgba(205, 235, 237, 0.874), rgb(243, 187, 187), rgb(241, 206, 172));
+    width: 400px;
+    padding: 20px;
+    transform: translate(-50, -50);
+    top: 30%;
+    left: 40%;
+    box-shadow: 0 4px 12px;
+    border-radius: 10px;
+}
+
+.close-btn {
+    float: right;
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+}
+
+.close-btn:hover{
+    color: red;
+}

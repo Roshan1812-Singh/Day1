@@ -1,0 +1,50 @@
+body {
+    background-image: linear-gradient(100deg, rgb(107, 53, 53), rgb(65, 91, 65), rgb(101, 101, 187));
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 150px auto;
+}
+
+.form-container {
+    background-image: linear-gradient(100deg, rgb(193, 192, 192), rgb(159, 214, 159), rgb(140, 140, 226));
+    border: 0px solid black;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    justify-items: center;
+    padding: 40px;
+    width: 280px;
+    
+    border-radius: 15px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    font-weight: 100;
+    font-style: inherit;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+p {
+    display: inline;
+    justify-content: left;
+    font-size: smaller;
+}
