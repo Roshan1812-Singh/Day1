@@ -6,6 +6,15 @@ const score = {
 
 function playGame(playerMove) {
 
+    let score = JSON.parse(localStorage.getItem
+        ('score')) || {
+        wins: 0,
+        loses: 0,
+        ties: 0
+    };
+
+    updatFun();
+
     const computerMove = pickComputerMove();
 
     let result = '';
@@ -46,18 +55,32 @@ function playGame(playerMove) {
         }
     }
 
-    if(result === 'You win'){
+    if (result === 'You win') {
         score.wins++;
     }
-    else if(result === "You lose") {
+    else if (result === "You lose") {
         score.loses++;
     }
-    else if(result === 'Tie'){
+    else if (result === 'Tie') {
         score.ties++;
     }
 
+    localStorage.setItem('score', JSON.stringify(score));
+
+    updatFun();
+
+    document.querySelector('.result').innerHTML = result;
+
+    document.querySelector('.moves')
+    .innerHTML = `You ${playerMove} - ${computerMove} Computer`;
+
     alert(`You picked ${playerMove}: Computer picked ${computerMove}. ${result}
     Wins: ${score.wins}, Loses: ${score.loses}, Ties: ${score.ties}`)
+}
+
+function updatFun() {
+    document.querySelector('.score')
+        .innerHTML = `Wins: ${score.wins}, Loses: ${score.loses}, Ties: ${score.ties}`;
 }
 
 function pickComputerMove() {
@@ -79,8 +102,8 @@ function pickComputerMove() {
     return computerMove;
 }
 
-function normal(a, b){
-    let result = a+ b;
+function normal(a, b) {
+    let result = a + b;
     console.log(result);
 }
 
